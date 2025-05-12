@@ -4,35 +4,35 @@ import { CheckCircle, Award, Building, ShieldCheck } from "lucide-react";
 const Benefits = () => {
   const benefitsList = [
     {
-      icon: <CheckCircle className="h-8 w-8 text-sky-blue" />,
+      icon: <CheckCircle className="h-8 w-8 text-bright-pink" />,
       title: "Mejor experiencia para huéspedes",
       description: "Ofrece una experiencia de alta calidad para huéspedes con discapacidad visual, permitiéndoles mayor autonomía.",
     },
     {
-      icon: <ShieldCheck className="h-8 w-8 text-sky-blue" />,
+      icon: <ShieldCheck className="h-8 w-8 text-bright-pink" />,
       title: "Cumplimiento normativo",
       description: "Cumple con la norma ISO 21902 de turismo accesible y evita posibles sanciones por incumplimiento.",
     },
     {
-      icon: <Award className="h-8 w-8 text-sky-blue" />,
+      icon: <Award className="h-8 w-8 text-bright-pink" />,
       title: "Reputación como hotel inclusivo",
       description: "Mejora tu imagen de marca y diferénciate de la competencia como un hotel comprometido con la inclusión.",
     },
     {
-      icon: <Building className="h-8 w-8 text-sky-blue" />,
+      icon: <Building className="h-8 w-8 text-bright-pink" />,
       title: "Sin equipos costosos",
       description: "No necesitas instalar infraestructura cara ni realizar reformas. Todo funciona con la tecnología que ya tienes.",
     },
   ];
 
   return (
-    <section id="beneficios" className="section-padding bg-light-gray">
+    <section id="beneficios" className="section-padding bg-gray-50">
       <div className="section">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Beneficios para <span className="text-gradient">tu hotel</span>
+            Beneficios para <span className="text-medium-purple">tu hotel</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-deep-purple max-w-3xl mx-auto">
             Nuestra solución no solo mejora la experiencia de tus huéspedes, sino que también aporta ventajas competitivas para tu negocio.
           </p>
         </div>
@@ -45,7 +45,7 @@ const Benefits = () => {
             >
               <div className="mb-4">{benefit.icon}</div>
               <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-              <p className="text-gray-600">{benefit.description}</p>
+              <p className="text-deep-purple">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -54,10 +54,10 @@ const Benefits = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">¿Sabías que...</h3>
-              <p className="text-lg text-gray-600 mb-4">
+              <p className="text-lg text-deep-purple mb-4">
                 Existen fondos y subvenciones disponibles para hoteles que implementan soluciones de accesibilidad?
               </p>
-              <p className="text-gray-600">
+              <p className="text-deep-purple">
                 Nuestros expertos te ayudarán a identificar y solicitar ayudas financieras para implementar nuestra solución en tu hotel.
               </p>
             </div>

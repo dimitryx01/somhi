@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-bold text-gradient">HotelAccess</span>
+              <span className="text-2xl font-bold text-medium-purple">HotelAccess</span>
             </a>
           </div>
           
@@ -27,22 +27,22 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden md:flex space-x-10">
-            <a href="#solucion" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#solucion" className="text-base font-medium text-deep-purple hover:text-medium-purple">
               Solución
             </a>
-            <a href="#beneficios" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#beneficios" className="text-base font-medium text-deep-purple hover:text-medium-purple">
               Beneficios
             </a>
-            <a href="#planes" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#planes" className="text-base font-medium text-deep-purple hover:text-medium-purple">
               Planes
             </a>
-            <a href="#valor" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#valor" className="text-base font-medium text-deep-purple hover:text-medium-purple">
               Valor Agregado
             </a>
           </nav>
           
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#contacto" className="btn-primary">
+            <a href="#contacto" className="bg-medium-purple text-white py-3 px-8 rounded-full font-medium shadow-md hover:bg-deep-purple transition-all duration-300">
               Solicita Demo
             </a>
           </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <span className="text-2xl font-bold text-gradient">HotelAccess</span>
+                  <span className="text-2xl font-bold text-medium-purple">HotelAccess</span>
                 </div>
                 <div className="-mr-2">
                   <button
@@ -71,19 +71,19 @@ const Navbar = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  <a href="#solucion" className="text-base font-medium text-gray-900 hover:text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                  <a href="#solucion" className="text-base font-medium text-deep-purple hover:text-medium-purple" onClick={() => setIsMenuOpen(false)}>
                     Solución
                   </a>
-                  <a href="#beneficios" className="text-base font-medium text-gray-900 hover:text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                  <a href="#beneficios" className="text-base font-medium text-deep-purple hover:text-medium-purple" onClick={() => setIsMenuOpen(false)}>
                     Beneficios
                   </a>
-                  <a href="#planes" className="text-base font-medium text-gray-900 hover:text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                  <a href="#planes" className="text-base font-medium text-deep-purple hover:text-medium-purple" onClick={() => setIsMenuOpen(false)}>
                     Planes
                   </a>
-                  <a href="#valor" className="text-base font-medium text-gray-900 hover:text-gray-700" onClick={() => setIsMenuOpen(false)}>
+                  <a href="#valor" className="text-base font-medium text-deep-purple hover:text-medium-purple" onClick={() => setIsMenuOpen(false)}>
                     Valor Agregado
                   </a>
-                  <a href="#contacto" className="btn-primary w-full text-center" onClick={() => setIsMenuOpen(false)}>
+                  <a href="#contacto" className="bg-medium-purple text-white py-3 px-8 rounded-full font-medium text-center" onClick={() => setIsMenuOpen(false)}>
                     Solicita Demo
                   </a>
                 </nav>

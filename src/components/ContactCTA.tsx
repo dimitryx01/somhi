@@ -46,26 +46,26 @@ const ContactCTA = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              ¿Listo para hacer tu hotel <span className="text-gradient">más inclusivo</span>?
+              ¿Listo para hacer tu hotel <span className="text-medium-purple">más inclusivo</span>?
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-deep-purple mb-8">
               Completa el formulario y un especialista en accesibilidad se pondrá en contacto contigo para resolver tus dudas y ofrecerte una demostración personalizada.
             </p>
             
-            <div className="bg-light-gray rounded-xl p-6 mb-8">
+            <div className="bg-gray-50 rounded-xl p-6 mb-8">
               <h3 className="text-xl font-bold mb-4">¿Por qué solicitar una demo?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
-                  <span className="h-6 w-6 rounded-full bg-soft-purple text-white flex items-center justify-center mr-3 flex-shrink-0">1</span>
-                  <span>Verás cómo funciona la app en tu propio hotel</span>
+                  <span className="h-6 w-6 rounded-full bg-medium-purple text-white flex items-center justify-center mr-3 flex-shrink-0">1</span>
+                  <span className="text-deep-purple">Verás cómo funciona la app en tu propio hotel</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="h-6 w-6 rounded-full bg-soft-purple text-white flex items-center justify-center mr-3 flex-shrink-0">2</span>
-                  <span>Recibirás un análisis personalizado de accesibilidad</span>
+                  <span className="h-6 w-6 rounded-full bg-medium-purple text-white flex items-center justify-center mr-3 flex-shrink-0">2</span>
+                  <span className="text-deep-purple">Recibirás un análisis personalizado de accesibilidad</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="h-6 w-6 rounded-full bg-soft-purple text-white flex items-center justify-center mr-3 flex-shrink-0">3</span>
-                  <span>Te explicaremos cómo cumplir la norma ISO 21902</span>
+                  <span className="h-6 w-6 rounded-full bg-medium-purple text-white flex items-center justify-center mr-3 flex-shrink-0">3</span>
+                  <span className="text-deep-purple">Te explicaremos cómo cumplir la norma ISO 21902</span>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ const ContactCTA = () => {
               <form onSubmit={handleSubmit}>
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="name" className="block text-sm font-medium text-navy-blue mb-1">
                       Nombre completo *
                     </label>
                     <input
@@ -88,13 +88,13 @@ const ContactCTA = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-soft-purple focus:border-soft-purple"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-medium-purple focus:border-medium-purple"
                       placeholder="Tu nombre y apellidos"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-navy-blue mb-1">
                       Email profesional *
                     </label>
                     <input
@@ -104,14 +104,14 @@ const ContactCTA = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-soft-purple focus:border-soft-purple"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-medium-purple focus:border-medium-purple"
                       placeholder="tu@hotel.com"
                     />
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="hotel" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="hotel" className="block text-sm font-medium text-navy-blue mb-1">
                         Nombre del hotel *
                       </label>
                       <input
@@ -121,13 +121,13 @@ const ContactCTA = () => {
                         required
                         value={formData.hotel}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-soft-purple focus:border-soft-purple"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-medium-purple focus:border-medium-purple"
                         placeholder="Nombre del hotel"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="rooms" className="block text-sm font-medium text-gray-700 mb-1">
+                      <label htmlFor="rooms" className="block text-sm font-medium text-navy-blue mb-1">
                         Número de habitaciones
                       </label>
                       <select
@@ -135,7 +135,7 @@ const ContactCTA = () => {
                         name="rooms"
                         value={formData.rooms}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-soft-purple focus:border-soft-purple"
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-medium-purple focus:border-medium-purple"
                       >
                         <option value="">Seleccionar</option>
                         <option value="1-20">1-20 habitaciones</option>
@@ -147,7 +147,7 @@ const ContactCTA = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label htmlFor="message" className="block text-sm font-medium text-navy-blue mb-1">
                       Mensaje (opcional)
                     </label>
                     <textarea
@@ -156,7 +156,7 @@ const ContactCTA = () => {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-soft-purple focus:border-soft-purple"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-medium-purple focus:border-medium-purple"
                       placeholder="Cuéntanos más sobre tus necesidades específicas"
                     ></textarea>
                   </div>
@@ -165,7 +165,7 @@ const ContactCTA = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full btn-primary flex items-center justify-center"
+                      className="w-full bg-medium-purple text-white py-3 px-8 rounded-full font-medium shadow-md hover:bg-deep-purple transition-all duration-300 flex items-center justify-center"
                     >
                       {isSubmitting ? (
                         <>

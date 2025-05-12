@@ -3,15 +3,15 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="pt-20 bg-gradient-to-br from-soft-blue via-light-purple to-soft-blue">
+    <div className="pt-20 bg-light-pink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 md:py-32">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              <span className="text-gradient">TRANSFORMA TU HOTEL</span><br />
-              <span className="text-gray-800">EN UN ESPACIO INCLUSIVO</span>
+              <span className="text-medium-purple">TRANSFORMA TU HOTEL</span><br />
+              <span className="text-navy-blue">EN UN ESPACIO INCLUSIVO</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8">
+            <p className="text-lg md:text-xl text-deep-purple mb-8">
               Accesibilidad real, tecnología al alcance y experiencia inclusiva sin complicaciones para personas con discapacidad visual.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -34,7 +34,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg animate-float">
-                <div className="text-soft-purple font-bold">ISO 21902</div>
+                <div className="text-medium-purple font-bold">ISO 21902</div>
                 <div className="text-xs text-gray-500">Turismo Accesible</div>
               </div>
             </div>

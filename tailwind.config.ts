@@ -26,11 +26,13 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: '#90689f',
+					dark: '#504b72',
+					light: '#ffcef3',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: '#ed90ce',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
@@ -42,7 +44,8 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
+					DEFAULT: '#90689f',
+					light: '#ffcef3',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
@@ -63,15 +66,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom color palette
-				"soft-blue": "#D3E4FD",
-				"sky-blue": "#33C3F0",
-				"bright-blue": "#1EAEDB",
-				"soft-purple": "#9b87f5",
-				"light-purple": "#E5DEFF",
-				"light-gray": "#F1F0FB",
-				"neutral-gray": "#8E9196",
-				"soft-green": "#F2FCE2",
+				// Custom color palette based on provided colors
+				"navy-blue": "#273751",
+				"deep-purple": "#504b72",
+				"medium-purple": "#90689f",
+				"bright-pink": "#ed90ce",
+				"light-pink": "#ffcef3",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -121,7 +121,7 @@ export default {
 				'float': 'float 3s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-pattern': "linear-gradient(to right, rgba(155, 135, 245, 0.8), rgba(51, 195, 240, 0.8)), url('/src/assets/hero-bg.jpg')",
+				'hero-pattern': "linear-gradient(to right, #504b72, #90689f), url('/src/assets/hero-bg.jpg')",
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
