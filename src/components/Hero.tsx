@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -43,7 +44,7 @@ const Hero = () => {
           {/* Badge ISO */}
           <div className="md:w-1/2 flex justify-end">
             <div className="bg-white p-4 rounded-xl shadow-lg animate-float">
-              <div className="text-medium-purple font-bold">ISO 21902</div>
+              <div className="text-primary font-bold">ISO 21902</div>
               <div className="text-xs text-gray-500">Turismo Accesible</div>
             </div>
           </div>
