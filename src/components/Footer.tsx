@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="section">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="text-2xl font-bold text-primary mb-4">HotelAccess</div>
+            <div className="text-2xl font-bold text-primary mb-4">somhi</div>
             <p className="text-muted-foreground mb-6">
               Transformando hoteles en espacios inclusivos mediante tecnología accesible.
             </p>
@@ -53,9 +53,9 @@ const Footer = () => {
                 <Phone className="h-5 w-5 mr-3" />
                 <span>+34 900 000 000</span>
               </a>
-              <a href="mailto:info@hotelaccess.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:info@somhi.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5 mr-3" />
-                <span>info@hotelaccess.com</span>
+                <span>info@somhi.com</span>
               </a>
               <p className="text-muted-foreground">
                 Calle Innovación, 42<br />
@@ -67,7 +67,7 @@ const Footer = () => {
         
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2025 HotelAccess. Todos los derechos reservados.</p>
+            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2025 somhi. Todos los derechos reservados.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Política de privacidad</a>
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Términos de servicio</a>
