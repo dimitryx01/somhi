@@ -20,63 +20,58 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				border: '#e1e4ec',
+				input: '#e1e4ec',
+				ring: '#1f52f1',
+				background: '#ffffff',
+				foreground: '#23272f',
 				primary: {
-					DEFAULT: '#90689f',
-					dark: '#504b72',
-					light: '#ffcef3',
-					foreground: 'hsl(var(--primary-foreground))'
+					DEFAULT: '#1f52f1',
+					dark: '#0b2567',
+					light: '#bed5fd',
+					foreground: '#ffffff'
 				},
 				secondary: {
-					DEFAULT: '#ed90ce',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#ffffff',
+					foreground: '#1f52f1'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: '#ef4444',
+					foreground: '#ffffff'
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					DEFAULT: '#f4f5fa',
+					foreground: '#6c6f7e'
 				},
 				accent: {
-					DEFAULT: '#90689f',
-					light: '#ffcef3',
-					foreground: 'hsl(var(--accent-foreground))'
+					DEFAULT: '#23272f',
+					foreground: '#ffffff'
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					DEFAULT: '#ffffff',
+					foreground: '#23272f'
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					DEFAULT: '#ffffff',
+					foreground: '#23272f'
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+					DEFAULT: '#f4f5fa',
+					foreground: '#23272f',
+					primary: '#1f52f1',
+					'primary-foreground': '#ffffff',
+					accent: '#23272f',
+					'accent-foreground': '#ffffff',
+					border: '#e1e4ec',
+					ring: '#1f52f1'
 				},
-				// Custom color palette based on provided colors
-				"navy-blue": "#273751",
-				"deep-purple": "#504b72",
-				"medium-purple": "#90689f",
-				"bright-pink": "#ed90ce",
-				"light-pink": "#ffcef3",
+				"brand-blue": "#1f52f1",
+				"brand-accent": "#23272f"
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				lg: '0.75rem',
+				md: '0.625rem',
+				sm: '0.5rem'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -121,7 +116,7 @@ export default {
 				'float': 'float 3s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-pattern': "linear-gradient(to right, #504b72, #90689f), url('/src/assets/hero-bg.jpg')",
+				'hero-pattern': "linear-gradient(to right, #1f52f1, #23272f)",
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
@@ -129,3 +124,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
