@@ -26,7 +26,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section id="beneficios" className="section-padding bg-muted">
+    <section id="beneficios" className="section-padding bg-blue-50">
       <div className="section">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
