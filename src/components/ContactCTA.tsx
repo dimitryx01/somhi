@@ -52,7 +52,7 @@ const ContactCTA = () => {
               Completa el formulario y un especialista en accesibilidad se pondrá en contacto contigo para resolver tus dudas y ofrecerte una demostración personalizada.
             </p>
             
-            <div className="bg-muted rounded-xl p-6 mb-8">
+            <div className="bg-blue-50 rounded-xl p-6 mb-8">
               <h3 className="text-xl font-bold mb-4">¿Por qué solicitar una demo?</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">

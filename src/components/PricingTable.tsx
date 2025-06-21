@@ -31,7 +31,6 @@ const PricingTable = () => {
         "Panel para la gestion de mapas",
         "Conoce el estado de tu hotel con estadisticas y metricas de uso",
         "Soporte online standar",
-
       ],
     },
     {
@@ -50,7 +49,6 @@ const PricingTable = () => {
         "Orientación experta ISO 21902",
         "Acceso a campañas de accesibilidad y turismo inclusivo",
         "Sello \"Hotel Inclusivo\"",
-        
         "Soporte online prioritario",
         "Actualizaciones prioritarias",
       ],
@@ -58,8 +56,8 @@ const PricingTable = () => {
   ];
 
   return (
-    <section id="planes" className="section-padding bg-white">
-      <div className="section">
+    <section id="planes" className="section-padding bg-blue-50">
+      <div className="section ">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Nuestras <span className="text-medium-purple">suscripciones</span>
@@ -70,7 +68,7 @@ const PricingTable = () => {
         </div>
 
         <div className="flex justify-center mb-10">
-          <div className="inline-flex rounded-full p-1 bg-gray-100">
+          <div className="inline-flex rounded-full p-1 bg-blue-100">
             <button className="py-2 px-6 rounded-full bg-white shadow-sm font-medium">
               Pago mensual
             </button>
@@ -84,10 +82,10 @@ const PricingTable = () => {
           {plans.map((plan, index) => (
             <div 
               key={index} 
-              className={`${plan.popular ? "bg-light-pink" : "bg-white"} p-6 md:p-8 rounded-2xl shadow-lg ${plan.popular ? "border-2 border-medium-purple" : "border border-gray-100"} flex flex-col h-full card-hover`}
+              className={`${plan.popular ? "bg-blue-200" : "bg-white"} p-6 md:p-8 rounded-2xl shadow-lg ${plan.popular ? "border-2 border-medium-purple" : "border border-gray-100"} flex flex-col h-full card-hover`}
             >
               {plan.popular && (
-                <div className="bg-medium-purple text-white py-1 px-4 rounded-full text-sm font-medium self-start mb-2">
+                <div className="bg-blue-700 text-white py-1 px-4 rounded-full text-sm font-medium self-start mb-2">
                   Más popular
                 </div>
               )}
@@ -114,7 +112,7 @@ const PricingTable = () => {
               
               <a 
                 href="#contacto" 
-                className={`${plan.popular ? "bg-medium-purple" : "border border-medium-purple bg-white text-medium-purple"} text-center py-3 px-8 rounded-full font-medium shadow-md transition-all duration-300 ${plan.popular ? "text-white" : ""}`}
+                className={`${plan.popular ? "bg-medium-purple" : "border border-medium-purple bg-white text-medium-purple"} text-center py-3 px-8 rounded-full font-medium shadow-md transition-all duration-300 ${plan.popular ? "bg-primary text-white" : ""}`}
               >
                 {plan.popular ? "Empieza ahora" : "Seleccionar plan"}
               </a>
@@ -122,7 +120,7 @@ const PricingTable = () => {
           ))}
         </div>
         
-        <div className="mt-16 bg-gray-50 rounded-2xl p-8">
+        <div className="mt-16 bg-blue-50 rounded-2xl p-8">
           <h3 className="text-2xl font-bold mb-4">Servicios adicionales</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md">

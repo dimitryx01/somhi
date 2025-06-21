@@ -3,7 +3,7 @@ import { Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-50 section-padding">
+    <footer className="bg-white section-padding">
       <div className="section">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
@@ -59,7 +59,7 @@ const Footer = () => {
               </a>
               <p className="text-muted-foreground">
                 Calle Innovación, 42<br />
-                28001 Madrid, España
+                Barcelona, España
               </p>
             </div>
           </div>
@@ -67,11 +67,10 @@ const Footer = () => {
         
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2025 somhi. Todos los derechos reservados.</p>
+            <p className="text-muted-foreground text-sm mb-4 md:mb-0">© 2025 somhi. Todos los derechos reservados. - Somhi es una propuesta de Trabajo Final de Master (TFM) elaborado por Maryuri Cifuentes y presentado a la Universidad Autonoma de Barcelona UAB.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Política de privacidad</a>
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Términos de servicio</a>
-              <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">Cookies</a>
             </div>
           </div>
         </div>
