@@ -1,7 +1,37 @@
 
 import { Accessibility, Map, MapPin, CheckCircle } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Solution = () => {
+  const mockupImages = [
+    {
+      src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      alt: "Mockup de la aplicación - Pantalla principal"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      alt: "Mockup de la aplicación - Navegación"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      alt: "Mockup de la aplicación - Mapa 3D"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      alt: "Mockup de la aplicación - Códigos Navilens"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1551808525-51a94da548ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      alt: "Mockup de la aplicación - Panel de administración"
+    }
+  ];
+
   return (
     <section id="solucion" className="section-padding bg-blue-50">
       <div className="section">
@@ -14,11 +44,25 @@ const Solution = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img 
-              src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2079&q=80" 
-              alt="App de geolocalización para hoteles" 
-              className="w-full h-auto"
-            />
+            <Carousel className="w-full max-w-md mx-auto">
+              <CarouselContent>
+                {mockupImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <div className="aspect-[9/16] overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 to-blue-100">
+                        <img 
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
           
           <div>
