@@ -64,7 +64,7 @@ const Benefits = () => {
             
             <div className="md:w-1/2 rounded-xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+                src="br.jpg" 
                 alt="Equipo de trabajo" 
                 className="w-full h-auto"
               />
