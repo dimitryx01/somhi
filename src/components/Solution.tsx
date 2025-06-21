@@ -43,13 +43,13 @@ const Solution = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="rounded-2xl overflow-hidden shadow-xl">
-            <Carousel className="w-full max-w-md mx-auto">
+          <div className="relative px-12">
+            <Carousel className="w-full max-w-md mx-auto" opts={{ loop: true }}>
               <CarouselContent>
                 {mockupImages.map((image, index) => (
                   <CarouselItem key={index}>
                     <div className="p-1">
-                      <div className="aspect-[9/16] overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 to-blue-100">
+                      <div className="aspect-[9/16] overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 shadow-2xl">
                         <img 
                           src={image.src}
                           alt={image.alt}
@@ -60,8 +60,8 @@ const Solution = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="left-0 bg-white shadow-lg hover:bg-gray-50" />
+              <CarouselNext className="right-0 bg-white shadow-lg hover:bg-gray-50" />
             </Carousel>
           </div>
           
