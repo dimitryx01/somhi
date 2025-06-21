@@ -1,4 +1,5 @@
 
+import React from "react";
 import { Accessibility, Map, MapPin, CheckCircle } from "lucide-react";
 import { useEffect } from "react";
 import {
