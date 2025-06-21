@@ -1,11 +1,13 @@
 
 import { Accessibility, Map, MapPin, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 const Solution = () => {
@@ -32,6 +34,20 @@ const Solution = () => {
     }
   ];
 
+  const [api, setApi] = React.useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   return (
     <section id="solucion" className="section-padding bg-blue-50">
       <div className="section">
@@ -44,7 +60,11 @@ const Solution = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="relative px-12">
-            <Carousel className="w-full max-w-md mx-auto" opts={{ loop: true }}>
+            <Carousel 
+              className="w-full max-w-md mx-auto" 
+              opts={{ loop: true }}
+              setApi={setApi}
+            >
               <CarouselContent>
                 {mockupImages.map((image, index) => (
                   <CarouselItem key={index}>
