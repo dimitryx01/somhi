@@ -14,23 +14,47 @@ import {
 const Solution = () => {
   const mockupImages = [
     {
-      src: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      src: "somhi_1m.jpg",
       alt: "Mockup de la aplicación - Pantalla principal"
     },
     {
-      src: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      src: "somhi_2m.jpg",
       alt: "Mockup de la aplicación - Navegación"
     },
     {
-      src: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      src: "somhi_3m.jpg",
       alt: "Mockup de la aplicación - Mapa 3D"
     },
     {
-      src: "https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      src: "somhi_11m.jpg",
       alt: "Mockup de la aplicación - Códigos Navilens"
     },
     {
-      src: "https://images.unsplash.com/photo-1551808525-51a94da548ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&h=1600&q=80",
+      src: "somhi_5m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_6m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_7m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_8m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_9m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_10m.jpg",
+      alt: "Mockup de la aplicación - Panel de administración"
+    },
+    {
+      src: "somhi_4m.jpg",
       alt: "Mockup de la aplicación - Panel de administración"
     }
   ];
@@ -44,7 +68,7 @@ const Solution = () => {
 
     const interval = setInterval(() => {
       api.scrollNext();
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [api]);
