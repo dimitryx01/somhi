@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# Soomi — Accessibility Solutions for Hotels (Landing Page)
 
-## Project info
+Source code for **Soomi's** marketing landing page — a company offering **visual accessibility solutions for hotels**, focused on improving the experience of guests with visual impairments.
 
-**URL**: https://lovable.dev/projects/518b4dce-8d49-4377-bc28-5a383b291f13
+> This repository is public **exclusively for portfolio and code review purposes**.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌐 About Soomi
 
-**Use Lovable**
+Soomi provides cutting-edge accessibility technology designed for the hospitality industry, enabling hotels to deliver an inclusive and barrier-free experience for visually impaired guests.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/518b4dce-8d49-4377-bc28-5a383b291f13) and start prompting.
+## ✨ Key Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Single-page landing** with 7 structured sections.
+- **Video background Hero** section for high visual impact.
+- **Fully responsive** design across all screen sizes.
+- **Accessible components** built on Radix UI primitives.
+- **Modern UI/UX** with consistent design patterns.
 
-**Use your preferred IDE**
+## 🗂️ Page Structure
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+| Section | Description |
+|---|---|
+| `Navbar` | Fixed navigation bar |
+| `Hero` | Full-screen hero with background video |
+| `Solution` | Overview of Soomi's accessibility solution |
+| `Benefits` | Key benefits for hotels and guests |
+| `PricingTable` | Service tiers and pricing |
+| `ValueProposition` | Why choose Soomi |
+| `ContactCTA` | Call-to-action and contact form |
+| `Footer` | Links and legal info |
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧱 Tech Stack
 
-Follow these steps:
+- **Core:** React 18 + TypeScript + Vite
+- **Styling:** Tailwind CSS
+- **Components:** shadcn/ui + Radix UI (accessible primitives)
+- **Routing:** React Router DOM
+- **Data:** TanStack Query (React Query)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Development Approach (AI-Assisted Workflow)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This project follows a modern development workflow where **AI was utilized exclusively for the initial UI design and layout scaffolding**. 
 
-# Step 3: Install the necessary dependencies.
-npm i
+As the lead developer, I have been responsible for the **full development lifecycle** beyond the initial template, including:
+- **Logic & Architecture:** Implementing the routing, state management, and component hierarchy.
+- **Custom Development:** Writing and refactoring core logic to meet specific project requirements.
+- **Code Quality:** Ensuring strict **TypeScript** type safety and performance optimization.
+- **Refinement:** Manually adjusting UI/UX details, responsiveness, and accessibility standards.
+- **Production Readiness:** Managing the build pipeline and deployment configurations.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## ⚙️ Getting Started (Local Development)
+
+### Prerequisites
+- Node.js (LTS)
+- npm or Bun
+
+### Install dependencies
+```bash
+npm install
+```
+
+### Run dev server
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for production
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Preview production build
+```bash
+npm run preview
+```
 
-**Use GitHub Codespaces**
+## 📄 License & Usage
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**Copyright (c) 2024–2026 Jolman Gordillo. All Rights Reserved.**
 
-## What technologies are used for this project?
+This repository is public **exclusively for portfolio and code review purposes** (recruitment processes).
+- **No permission** is granted to copy, modify, redistribute, or use this code for any commercial or personal projects.
+- Unauthorized use of the source code, assets, or design is strictly prohibited.
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/518b4dce-8d49-4377-bc28-5a383b291f13) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+**Developed by Jolman Gordillo**  
+[Website](https://jolmandeveloper.com) | [LinkedIn](https://www.linkedin.com/in/jolmang/)
