@@ -4,7 +4,8 @@ Source code for **Soomi's** marketing landing page — a company offering **visu
 
 > This repository is public **exclusively for portfolio and code review purposes**.
 
----
+## Live Site
+- https://somhi-uab.lovable.app
 
 ## 🌐 About Soomi
 
@@ -41,7 +42,7 @@ Soomi provides cutting-edge accessibility technology designed for the hospitalit
 
 ## 🛠️ Development Approach (AI-Assisted Workflow)
 
-This project follows a modern development workflow where **AI was utilized exclusively for the initial UI design and layout scaffolding**. 
+This project follows a modern development workflow where **AI was utilized exclusively for the initial UI design and layout scaffolding**.
 
 As the lead developer, I have been responsible for the **full development lifecycle** beyond the initial template, including:
 - **Logic & Architecture:** Implementing the routing, state management, and component hierarchy.
